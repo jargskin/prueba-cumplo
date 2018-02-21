@@ -1,0 +1,79 @@
+.container
+  .navigation{:align => "center"}
+    .row
+      .col-sm-9
+        %ul.nav.nav-tabs
+          %li.logo
+            %img{:alt => "", :src => "https://secure-cdn.cumplo.cl/assets/cumplo2017/logo-cumplo-b-df67922a93fa73b0405f2552b5341e61.svg"}/
+          %li
+            %a{:href => "#"} Oportunidad de Inversión
+          %li
+            %a{:href => "#"} Financiamiento
+          %li
+            %a{:href => "#"} Inversión
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Nosotros
+              %span.caret           
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Centro de Ayuda
+              %span.caret
+      .col-sm-3.acciones
+        %div.user-data
+          %p.text-center
+            Hola
+            %span.name-user Usuario Genérico
+            %br/
+            %span.email-user usuario@email.com
+.container
+  #myBussiness
+    .col-sm-11.col-sm-offset-1
+      .row
+        %div
+          %h4 MIS EMPRESAS
+      %br/
+      %br/    
+      .row
+        .col-sm-3
+          %button.add-empresas.btn{:type => "button"}
+            %i.fa.fa-plus
+            Nueva Empresa
+        .col-sm-9.cuadro-calculo
+          .row
+            %p
+              %b Calcula un monto en dólares:
+            %span $
+            %input#valor_pesos.text-right{:placeholder => "$0", :type => "number"}/
+            %button.btn-success.btn{:onclick => "calcular(#{@dolar})", :step => "1"} Calcular
+          %br/
+          %br/
+          .row
+            %p
+              %b Cuenta Personal
+            %span Tu inversión en Dólares:
+            %input#resultado.text-right{:placeholder => "$0", :readonly => "readonly", :type => "number"}/
+.container
+  %br/
+  %br/
+  %hr/
+  %footer
+    .col-sm-12
+      .row
+        .col-sm-3.logo-cumplo
+          %img{:alt => "", :src => "https://secure-cdn.cumplo.cl/assets/cumplo2017/cumplo-footer-2-9ab327034a4f1923f99d5e1a6d53fbdf.svg"}/
+        .col-sm-9.caja-logos
+          .row
+            .col-sm-3.logo-1
+              %p Certificados como:
+              %img{:src => "https://secure-cdn.cumplo.cl/assets/cumplo2017/foot_empresab-75aa86f2a43395e1f862a9b2d1faea26.jpg", :alt => "Empresa B"}/
+            .col-sm-3.logo-2
+              %p Reconocidos por:
+              %img{:src => "https://secure-cdn.cumplo.cl/assets/cumplo2017/foot_avonni-7dec67b68850ba4f4d5a0d31d304a55a.jpg", :alt => "Reconocidos por Avonni"}/
+            .col-sm-3.logo-3
+              %p Con el Apoyo de:
+              %img{:src => "https://secure-cdn.cumplo.cl/assets/cumplo2017/foot_corfo-f0e766ed8cf19c1ad914fcc8fff2eea1.jpg", :alt => "Con el apoyo de Corfo"}/
+            .col-sm-3.logo-4
+              %p Miembros de:
+              %img{:src => "https://secure-cdn.cumplo.cl/assets/cumplo2017/foot_afico-de5687a76cc26cad90db1b6e723f1d07.jpg", :alt => "Miembros de Afico"}/
+

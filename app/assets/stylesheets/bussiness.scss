@@ -1,0 +1,97 @@
+// Place all the styles related to the Bussiness controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+	font-family: 'Roboto';
+}
+.container {
+	margin: 0 auto;
+  max-width: 98em;
+  width: 100%;
+  position: relative;
+  hr {
+  	border-top: 5px solid #4b4b4b;
+  }
+	.navigation {
+		background-color: #00ba68;
+		height: 65px;
+		.nav {
+			.logo {
+				img {
+					width: 80%;
+					margin: 20px 0 0px 15px;				
+				}
+			}
+			li {
+				a {
+					color: #fff;
+					padding-top: 30px;
+					border: none;
+					margin-right: 10px;
+				}
+			}
+			&.nav-tabs {
+				border: none;
+				li {
+					margin-right: -10px;
+				}
+				li > a:hover {
+					background: none;
+					border: none;
+					border-bottom:5px solid #fff;
+				}
+			}
+		}
+	}
+	.acciones {
+		background: #3b454e;
+		height: 65px;
+		color: #ddd;
+		.user-data {
+			margin: 10px 0 0 0;
+			.name-user {
+				color: #B8E986;
+			}
+		}
+	}
+	#myBussiness {
+		.add-empresas {
+			margin-top: 35px;
+			background-color: #39464f;
+	    width: 90%;
+	    color: #ddd;
+		}
+		.cuadro-calculo {
+			border: 5px solid #d4dbe5;
+			padding: 35px 40px;
+			width: 70%;
+			input {
+				height: 34px;;
+			}
+			#resultado {
+				background-color: #e2e7eb;
+				border: none;
+				color: #4b4b4b;
+				font-weight: bold;
+				font-size: 17px;
+			}
+		}
+	}
+	footer {
+		.logo-cumplo {
+			img {
+				margin: 40px auto;
+				width: 100%;
+			}
+		}
+		.caja-logos {
+			.logo-3, .logo-4{
+				img {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
